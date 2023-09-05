@@ -12,3 +12,6 @@ provider "aws" {
   region = "us-east-1"
 }
 
+resource "aws_vpc" "prod" {
+  cidr_block = "192.168.1.0/27"
+}
